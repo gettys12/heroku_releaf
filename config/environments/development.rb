@@ -9,7 +9,7 @@ Releaf::Application.configure do
   config.action_mailer.delivery_method = :smtp
 
 
-  Paperclip.options[:command_path] = "/Users/kmurphy"
+  # Do not eager load code on boot.
   # Do not eager load code on boot.
   config.eager_load = false
 

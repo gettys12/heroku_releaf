@@ -7,50 +7,53 @@ source 'https://rubygems.org'
 
 
 gem 'rails', '~> 4.0.0'
-
-gem 'devise'
+gem 'devise', '~> 3.2.2'
 gem 'rails_admin'
 
-gem  'pg'
+group :development, :test do
+  gem 'sqlite3'
+end
 
-gem 'coffee-rails'
-gem 'jbuilder', '~> 1.2'
-gem 'jquery-rails'
-gem 'sass-rails'
-gem 'uglifier', '>= 1.3.0'
-gem 'compass-rails'
-gem "twitter-bootstrap-rails"
-gem "paperclip"
-gem 'jquery-ui-rails'
-# Use Uglifier as compressor for JavaScript assets
-gem 'google-api-client', :require => 'google/api_client'
+group :production do
+  gem  'pg'
+  gem 'rails_12factor'
+end
+
+#isolate assets for heroku deployment
+group :assets do
+  gem 'coffee-rails'
+  gem 'jbuilder', '~> 1.2'
+  gem 'jquery-rails'
+  gem 'sass-rails'
+  gem 'uglifier', '>= 1.3.0'
+  gem 'compass-rails'
+  gem "twitter-bootstrap-rails"
+  gem "paperclip"
+  gem 'jquery-ui-rails'
+  # Use Uglifier as compressor for JavaScript assets
+  gem 'google-api-client', :require => 'google/api_client'
+  gem 'haml'
+  gem 'gmaps4rails'
+  gem 'sinatra'
+  gem 'google_calendar_oauth2'
+  gem 'fullcalendar-rails'
+  gem 'jquery-rest-rails'
+end
 
 # Use CoffeeScript for .js.coffee assets and views
-gem 'gmaps4rails'
-gem 'sinatra'
-gem 'google_calendar_oauth2'
-gem 'fullcalendar-rails'
-gem 'jquery-rest-rails'
+
 gem 'protected_attributes'
 # Used for file upload
 gem 'carrierwave'
 # Used for user login
 gem 'active_attr', '0.7.0'
-gem 'jquery-qtip2-rails'
 
-gem 'haml'
+gem 'jquery-fileupload-rails'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
-
-# Use jquery as the JavaScript library
-gem 'rails_12factor', group: :production
-# Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-
-# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
 end
 
-gem 'jquery-fileupload-rails'
+

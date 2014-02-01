@@ -15,8 +15,8 @@
     </data-source>
     <data-source source="LOCAL" name="Rails releaf: production" uuid="72b8df47-d7e9-4947-9df6-afdf00782562">
       <driver-ref>sqlite.xerial</driver-ref>
-      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:C:\Users\kmurphy\Ruby\releaf\db\production.sqlite3</jdbc-url>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1/db/production.postgresql</jdbc-url>
       <libraries />
     </data-source>
   </component>
