@@ -1,0 +1,42 @@
+#myCarousel{
+  height: 500px;
+  width: 600px;
+  position: absolute;
+  margin: 0;
+}
+.carousel.slide{
+
+}
+.carousel-indicators{
+}
+
+.carousel-inner{
+
+}
+
+.item{
+  position: relative;
+  height: 500px;
+  img{
+
+  }
+}
+.carousel-control.right{
+  height: 100px;
+  font-size: 100px !important;
+  top: 120px;
+
+}
+
+.carousel-control.left{
+  height: 100px;
+  font-size: 100px !important;
+  top: 120px;
+}
+
+.carousel-control.active{
+  height: 100px;
+  font-size: 100px !important;
+  top: 120px;
+
+}

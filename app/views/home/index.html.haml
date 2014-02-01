@@ -1,0 +1,52 @@
+= javascript_include_tag 'index.js'
+.container-fluid
+  %h1
+  .row-fluid
+    .span1
+    .span6
+      = image_tag('Drawing1.png', :class=> 'big-logo')
+      %center
+        #subtitle
+    .span5
+      .fleaf-description
+        %h3.fleaf-description
+          ="Welcome!"
+        %btn.btn.btn-facebook
+          %i.fa.fa-facebook
+            =" | Connect with Facebook"
+        %p.fleaf-description
+          ="In the last two decades, over thirty-five percent of Northern Virginia's urban forest has been bulldozed and chainsawed, according to aerial photos from the Forest Service. Our aim is to conserve, restore and promote sustainable urban forests in Northern Virginia by restoring large numbers of native trees on public commons land where funding for landscaping is lacking and nothing would otherwise be planted, and to educate government and the public about the values and benefits of the urban forest."
+        %p.fleaf-description
+          ="We operate through enlisting volunteer workers and support from interested civic groups, youth, scouts, local businesses, churches and schools."
+        %p.find-more
+          =link_to "Learn More", :controller=>'home', :action=>'about'
+  .row-fluid
+    .span2.offset4.center
+    .span2.center
+  .row-fluid.icons
+    .span12.icons.center
+.container
+  .row
+    .span12
+      =image_tag('photo-banner.jpg',:class=>'banner-slice')
+  -if !(@libraries.empty?)
+    =render :partial => 'libraries/index', :locals => {}
+.container
+  .row
+    .span12
+      =image_tag('event-banner.jpg',:class=>'banner-slice')
+  .row.cal
+    .span12
+      =render :partial => 'events/index', :locals => {}
+.container
+  %h1
+    ="Our Mission in Four Goals:"
+  .row.goals
+    .span3
+      ="To be a self-sustainable organization"
+    .span3
+      ="To restore urban forests"
+    .span3
+      ="To develop and maintain an educational program"
+    .span3
+      ="To promote tree-friendly policies to conserve the urban forests"

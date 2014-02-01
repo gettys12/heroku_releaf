@@ -1,0 +1,3 @@
+var modalcontent = $('body').find('.navbar');
+$(modalcontent).before("<%= escape_javascript(render "new", :formats => [:html]) %>");
+$("#testModal").modal();

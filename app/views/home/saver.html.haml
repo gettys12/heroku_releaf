@@ -1,0 +1,10 @@
+//from photo gallery
+-@display_resources.each do |photo|
+  .item
+    -if(photo !=nil)
+      =image_tag(photo.image.url)
+    .carousel-caption
+      %h1 Resource Photo
+      %p.lead
+        Test!
+      %a.btn.btn-large.btn-primary{ :href => "#" } View Event

@@ -1,0 +1,20 @@
+<h2>Sign up</h2>
+
+<div class="modal hide fade in" id="testModal">
+  <%= form_for(resource, :as=> resource_name, :url=>registratioon_path(resource_name),:remote=>:true) do |f| %>
+      <%= devise_error_messages! %>
+
+      <div><%= f.label :email %><br />
+        <%= f.email_field :email, :autofocus => true %></div>
+
+      <div><%= f.label :password %><br />
+        <%= f.password_field :password %></div>
+
+      <div><%= f.label :password_confirmation %><br />
+        <%= f.password_field :password_confirmation %></div>
+
+      <div><%= f.submit "TESTESTSTES!" %></div>
+  <% end %>
+
+  <%= render "devise/shared/links" %>
+</div>

@@ -1,0 +1,19 @@
+%html
+  %head
+    = stylesheet_link_tag 'index', :media => "all"
+    %h2
+      = "Welcome to Fairfax ReLeaf"
+    %body
+      = nav_bar :brand => "Menu" do
+        = menu_item "Home", root_path
+        = menu_item "About Us", about_path
+        = menu_item "Contact Us", contact_path
+        = menu_item "Libraries", libraries_path
+        = menu_item "Galleries",  gallery_path
+      =image_tag('tree1.jpg', :id => 'tree')
+      =link_to image_tag('orange.gif',:id => 'about',:size=> '50x50') ,:controller=> 'home', :action=> 'about'
+      =link_to image_tag('orange.gif',:id => 'message',:size=> '50x50') ,:controller=> 'home', :action=> 'message'
+      =link_to image_tag('orange.gif',:id => 'photos',:size=> '50x50') ,:controller=> 'photos', :action=> 'index'
+
+
+

@@ -1,0 +1,93 @@
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+@mixin center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+#calendar.fc.fc-ltr{
+  width:80%;
+  height: 80%;
+  @include center-block;
+}
+
+.fc-content, .fc-header{
+  max-width: 100%;
+
+}
+.fc-content{
+  max-height: 100%;
+}
+
+.fc-header{
+  top:0px;
+  left: 0px;
+}
+
+
+.fc-border-separate > *{
+  background-color: white;
+  border-color: white !important;
+  border-width: 3px;
+}
+
+tr.fc-week{
+  width:100%;
+}
+td.fc-day{
+  height: 100%;
+  padding: 0 !important;
+}
+th.fc-last, td.fc-last{
+  border-right-width: 1px;
+}
+tr.fc-last{
+   th, td{
+      border-bottom-width: 1px;
+   }
+}
+tbody tr.fc-first{
+  td, th{
+    border-top-width: 0;
+  }
+}
+.fc-widget-header{
+  color: black;
+}
+.fc-widget-header,.fc-widget-content{
+  border: 1px solid rgba(49, 218, 98, 0.25);;
+}
+
+.fc-day-number{
+  top: 0px;
+  right: 0px;
+  color: black;
+}
+.fc-day-content{
+  top:0px;
+  right: 0px;
+
+}
+
+.fc-today{
+}
+.fc-other-month .fc-day-number {
+  opacity: 0.3;
+  filter: alpha(opacity=30); /* for IE */
+}
+
+
+.fc-day .fc-today.fc-state-highlight { /* <td> today cell */ /* TODO: add .fc-today to <th> */
+  background-color: lightyellow;
+  @include opacity(.4);
+  border-color: #8cce3b;
+}
+
+
+
+

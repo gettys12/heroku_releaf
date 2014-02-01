@@ -1,0 +1,36 @@
+= stylesheet_link_tag "landing"
+= javascript_include_tag 'http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'
+= javascript_include_tag 'bootstrap.min.js'
+= javascript_include_tag 'index.js'
+
+#myCarousel.carousel.slide{"data-ride" => "carousel"}
+  %ol.carousel-indicators
+    %li.active{"data-slide-to" => "0", "data-target" => "#myCarousel"}
+    %li{"data-slide-to" => "1", "data-target" => "#myCarousel"}
+    %li{"data-slide-to" => "2", "data-target" => "#myCarousel"}
+  .carousel-inner
+    .item.active
+      =image_tag(@last.image.url)
+      .container
+        .carousel-caption
+          %h1
+            = @library.name
+          %p
+            = "Photo Description"
+          %p
+            %a.btn.btn-lg.btn-primary{href: "#", role: "button"}
+    - @library.resources.each do |f|
+      .item
+        =image_tag(f.image.url)
+        .container
+          .carousel-caption
+            %h1
+              = "photo headling or description?"
+            %p
+              = "Photo Description"
+            %p
+              %a.btn.btn-lg.btn-primary{href: "#", role: "button"}
+    %a.left.carousel-control{"data-slide" => "prev", href: "#myCarousel"}
+      &laquo
+    %a.right.carousel-control{"data-slide" => "next", href: "#myCarousel"}
+      &raquo
