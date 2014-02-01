@@ -5,8 +5,9 @@ source 'https://rubygems.org'
 
 # Use sqlite3 as the database for Active Record
 
-
 gem 'rails', '~> 4.0.0'
+
+
 gem 'devise', '~> 3.2.2'
 gem 'rails_admin'
 
