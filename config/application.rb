@@ -4,25 +4,10 @@ require 'rails/all'
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
-Bundler.require(:default, Rails.env)
-require 'sinatra'
-require 'rubygems'
-require 'google_calendar_oauth2'
 
-
-before do
-  unless GoogleCalendar.connection.authorization.access_token || request.path_info =~ /^\/oauth2/
-    redirect client.redirect_to
-  end
-end
-
-get '/oauth2callback' do
-  GoogleCalendar.connection.authorization.code = params['code']
-  GoogleCalendar.connection.authorization.fetch_access_token!
-  redirect '/create_event'
-end
 module Releaf
   class Application < Rails::Application
+    config.assets.initialize_on_precompile = false
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
