@@ -43,7 +43,7 @@ gem 'haml'
 # gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
-
+gem 'rails_12factor', group: :production
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
