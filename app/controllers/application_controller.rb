@@ -1,9 +1,7 @@
 class ApplicationController < ActionController::Base
   protected
 
-  def library
-    session[:library] ||= Library.new
-  end
+ 
 
   def admin
     @admin = Admin.first
