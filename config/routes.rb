@@ -11,7 +11,6 @@ Releaf::Application.routes.draw do
     resources :resources
   end
   get "/about" => "home#about"
-  get "/libraries" => "libraries#old"
   get "/gallery" => "home#gallery"
 
 
