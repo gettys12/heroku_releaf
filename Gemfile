@@ -11,7 +11,7 @@ gem 'rails', '~> 4.0.0'
 gem 'devise'
 gem 'rails_admin'
 
-gem 'sqlite3'
+gem  'pg'
 
 gem 'coffee-rails'
 gem 'jbuilder', '~> 1.2'
