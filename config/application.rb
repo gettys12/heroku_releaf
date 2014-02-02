@@ -11,8 +11,8 @@ module Releaf
     config.assets.enabled = true
     #config.assets.initialize_on_precompile = false
     config.assets.precompile += ['rails_admin/rails_admin.css', 'rails_admin/rails_admin.js',
-                                 'bootstrap.css','landing.css.scss','newmy-calendar.css.scss',
-                                 'social-buttons.css','_event.css.scss','_header.css.scss','_table.css.scss','bootstrap.min.js','index.js']
+                                 'bootstrap.css','test.css', 'landing.css.scss','index.js','fullcalendar.js','newmy-calendar.css.scss',
+                                 'social-buttons.css','_event.css.scss','_header.css.scss','_table.css.scss','bootstrap.min.js',]
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
