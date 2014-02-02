@@ -22,24 +22,23 @@ end
 gem "twitter-bootstrap-rails"
 
 #isolate assets for heroku deployment
-group :assets do
-  gem 'coffee-rails'
-  gem 'jbuilder', '~> 1.2'
-  gem 'jquery-rails'
-  gem 'sass-rails'
-  gem 'uglifier', '>= 1.3.0'
-  gem 'compass-rails'
-  gem "paperclip"
-  gem 'jquery-ui-rails'
-  # Use Uglifier as compressor for JavaScript assets
-  gem 'google-api-client', :require => 'google/api_client'
-  gem 'haml'
-  gem 'gmaps4rails'
-  gem 'sinatra'
-  gem 'google_calendar_oauth2'
-  gem 'fullcalendar-rails'
-  gem 'jquery-rest-rails'
-end
+gem 'coffee-rails'
+gem 'jbuilder', '~> 1.2'
+gem 'jquery-rails'
+gem 'sass-rails'
+gem 'uglifier', '>= 1.3.0'
+gem 'compass-rails'
+gem "paperclip"
+gem 'jquery-ui-rails'
+# Use Uglifier as compressor for JavaScript assets
+gem 'google-api-client', :require => 'google/api_client'
+gem 'haml'
+gem 'gmaps4rails'
+gem 'sinatra'
+gem 'google_calendar_oauth2'
+gem 'fullcalendar-rails'
+gem 'jquery-rest-rails'
+
 
 # Use CoffeeScript for .js.coffee assets and views
 
