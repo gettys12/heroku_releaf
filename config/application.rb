@@ -1,7 +1,7 @@
 require File.expand_path('../boot', __FILE__)
 # If you precompile assets before deploying to production, use this line
 require 'rails/all'
-
+require 'sass-rails'
 Bundler.require(:default, Rails.env) if defined?(Bundler)
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
