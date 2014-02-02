@@ -1,3 +1,4 @@
 //= require jquery
 //= require jquery_ujs
-//= require jquery.rest
+//= require bootstrap
+//= require_tree .
