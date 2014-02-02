@@ -1,22 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="3306003214">
-    <data-source source="LOCAL" name="Rails releaf: development" uuid="c456e919-12e1-43bc-a5bc-6537c7003f37">
-      <driver-ref>sqlite.xerial</driver-ref>
-      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:C:\Users\kmurphy\Ruby\releaf\db\development.sqlite3</jdbc-url>
-      <libraries />
-    </data-source>
-    <data-source source="LOCAL" name="Rails releaf: test" uuid="d5d65789-aadb-4867-811c-52e166b9b74e">
-      <driver-ref>sqlite.xerial</driver-ref>
-      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:C:\Users\kmurphy\Ruby\releaf\db\test.sqlite3</jdbc-url>
-      <libraries />
-    </data-source>
-    <data-source source="LOCAL" name="Rails releaf: production" uuid="72b8df47-d7e9-4947-9df6-afdf00782562">
-      <driver-ref>sqlite.xerial</driver-ref>
+  <component name="DataSourceManagerImpl" format="xml" hash="2792695486">
+    <data-source source="LOCAL" name="PostgreSQL - releaf_development@localhost" uuid="62ac5e20-0064-488d-8eb2-156e7edbeab5">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql:db/production.postgresql</jdbc-url>
+      <jdbc-url>jdbc:postgresql://localhost:5432/releaf_development</jdbc-url>
+      <user-name>postgres</user-name>
+      <user-password>dfc5dfc7dfcddfc5dfc7dfcddf9bdf9b</user-password>
+      <schema-pattern>releaf_development.*</schema-pattern>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails releaf: development" uuid="063ef5a7-5c4d-475c-b3f7-0c649652988f">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1/releaf_development</jdbc-url>
+      <user-name>postgres</user-name>
+      <user-password>dfc5dfc7dfcddfc5dfc7dfcddf9bdf9b</user-password>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails releaf: test" uuid="48d1ddf7-a952-4cf2-86a9-62914c9a0e20">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1/releaf_test</jdbc-url>
+      <user-name>postgres</user-name>
+      <user-password>dfc5dfc7dfcddfc5dfc7dfcddf9bdf9b</user-password>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails releaf: production" uuid="4c9da399-1bef-45cc-adf0-b06445b6eb9e">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:releaf_production</jdbc-url>
+      <user-name>postgres</user-name>
+      <user-password>dfc5dfc7dfcddfc5dfc7dfcddf9bdf9b</user-password>
       <libraries />
     </data-source>
   </component>

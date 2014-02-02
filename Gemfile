@@ -11,14 +11,10 @@ gem 'rails', '~> 4.0.0'
 gem 'devise', '~> 3.2.2'
 gem 'rails_admin'
 
-group :development, :test do
-  gem 'sqlite3'
-end
 
-group :production do
-  gem  'pg'
-  gem 'rails_12factor'
-end
+gem  'pg'
+gem 'rails_12factor'
+
 gem "twitter-bootstrap-rails"
 
 #isolate assets for heroku deployment
@@ -57,3 +53,4 @@ group :doc do
 end
 
 
+ruby "2.0.0"
