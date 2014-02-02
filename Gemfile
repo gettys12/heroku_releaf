@@ -13,7 +13,7 @@ gem 'rails_admin'
 
 
 gem  'pg'
-gem 'rails_12factor'
+gem 'rails_12factor', :group=> "production"
 
 gem "twitter-bootstrap-rails"
 

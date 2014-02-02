@@ -1,7 +1,6 @@
 require File.expand_path('../boot', __FILE__)
 # If you precompile assets before deploying to production, use this line
 require 'rails/all'
-require 'devise'
 
 Bundler.require(:default, Rails.env) if defined?(Bundler)
 # Require the gems listed in Gemfile, including any gems
@@ -9,18 +8,14 @@ Bundler.require(:default, Rails.env) if defined?(Bundler)
 
 module Releaf
   class Application < Rails::Application
-    config.cache_classes = true
-    config.serve_static_assets = true
-    config.assets.compile = true
-    config.assets.digest = true
+
 
     #config.assets.initialize_on_precompile = false
-=begin
+
     config.assets.precompile += ['rails_admin/rails_admin.css', 'rails_admin/rails_admin.js',
-                                 'bootstrap.css','test.css', 'landing.css.scss','index.js','fullcalendar.js','newmy-calendar.css.scss',
+                                 'bootstrap.css','application.css','test.css', 'landing.css.scss','index.js','fullcalendar.js','newmy-calendar.css.scss',
                                  'social-buttons.css','_event.css.scss','_header.css.scss','_table.css.scss','bootstrap.min.js',]
-    # Settings in config/environments/* take precedence over those specified here.
-=end
+
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
 
