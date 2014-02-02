@@ -19,6 +19,7 @@ group :production do
   gem  'pg'
   gem 'rails_12factor'
 end
+gem "twitter-bootstrap-rails"
 
 #isolate assets for heroku deployment
 group :assets do
@@ -28,7 +29,6 @@ group :assets do
   gem 'sass-rails'
   gem 'uglifier', '>= 1.3.0'
   gem 'compass-rails'
-  gem "twitter-bootstrap-rails"
   gem "paperclip"
   gem 'jquery-ui-rails'
   # Use Uglifier as compressor for JavaScript assets
