@@ -11,7 +11,7 @@ gem 'rails', '~> 4.0.0'
 gem 'devise', '~> 3.2.2'
 gem 'rails_admin'
 
-
+gem 'sass-rails', '~> 4.0.0'
 gem  'pg'
 gem 'rails_12factor', :group=> "production"
 
@@ -21,7 +21,7 @@ gem "twitter-bootstrap-rails"
 gem 'coffee-rails'
 gem 'jbuilder', '~> 1.2'
 gem 'jquery-rails'
-gem 'sass-rails'
+
 gem 'uglifier', '>= 1.3.0'
 gem 'compass-rails'
 gem "paperclip"
