@@ -1,7 +1,7 @@
 require File.expand_path('../boot', __FILE__)
 # If you precompile assets before deploying to production, use this line
 require 'rails/all'
-require 'sass-rails'
+
 Bundler.require(:default, Rails.env) if defined?(Bundler)
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
@@ -13,7 +13,7 @@ module Releaf
     #config.assets.initialize_on_precompile = false
 
     config.assets.precompile += ['rails_admin/rails_admin.css', 'rails_admin/rails_admin.js',
-                                 'bootstrap.css','application.css','test.css', 'landing.css.scss','index.js','fullcalendar.js','newmy-calendar.css.scss',
+                                 'bootstrap.css','application.css','test.css', 'landing.css','index.js','fullcalendar.js','newmy-calendar.css',
                                  'social-buttons.css','_event.css.scss','_header.css.scss','_table.css.scss','bootstrap.min.js',]
 
     # Application configuration should go into files in config/initializers
