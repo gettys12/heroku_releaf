@@ -7,11 +7,11 @@
     = javascript_include_tag 'bootstrap.min.js'
   %body.landing
     #testModal.modal.hide.fade-in
-      = form_tag session_path(:user) do
-        = text_field_tag 'user[email]'
-        = password_field_tag 'user[password]'
-        = check_box_tag 'user[remember_me]'
-        = label_tag 'user[remember_me]', 'Remember me'
+      = form_for session_path(:user) do |f|
+        = f.text_field 'user[email]'
+        = f.text_field 'user[password]'
+        = f.check_box 'user[remember_me]'
+        = f.label 'user[remember_me]', 'Remember me'
         %button Sign in
         = link_to "Forgot your password?", new_password_path(:user)
     .navbar.navbar-fixed-top
@@ -22,9 +22,9 @@
               %li
                 =image_tag('brand_slice.gif',:class=>'brand-slice')
               %li
-                =link_to image_tag('event_slice.gif',:class=>'icon-slice'), events_path
+                =link_to image_tag('event_slice.gif',:class=>'icon-slice'), :anchor => 'eventSection'
               %li
-                =link_to image_tag('photo_slice.gif',:class=>'icon-slice',:class=>'icon-slice'), libraries_path
+                =link_to image_tag('photo_slice.gif',:class=>'icon-slice',:class=>'icon-slice'), :anchor=>'photoSection'
               %li
                 =link_to image_tag('contact.gif',:class=>'icon-slice'), new_message_path
             %ul.nav.pull-right

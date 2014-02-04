@@ -28,13 +28,13 @@
 .container
   .row
     .span12
-      =image_tag('photo-banner.jpg',:class=>'banner-slice')
+      =image_tag('photo-banner.jpg',:class=>'banner-slice', :id=>'photoSection')
   -if !(@libraries.empty?)
     =render :partial => 'libraries/index', :locals => {}
 .container
   .row
     .span12
-      =image_tag('event-banner.jpg',:class=>'banner-slice')
+      =image_tag('event-banner.jpg',:class=>'banner-slice',:id=>'eventSection')
   .row.cal
     .span12
       =render :partial => 'events/index', :locals => {}
