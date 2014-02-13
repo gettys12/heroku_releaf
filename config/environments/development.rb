@@ -3,9 +3,9 @@ Releaf::Application.configure do
   config.paperclip_defaults = {
       :storage => :s3,
       :s3_credentials => {
-          :bucket => ENV['S3_BUCKET_NAME'],
-          :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
-          :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
+          :bucket => ENV['releaf-files'],
+          :access_key_id => ENV['AKIAJIEDOEQZF4E6UUIQ'],
+          :secret_access_key => ENV['P5LuhFS+1GwFJc8IKlP+NVnJ2rXWgQSQ3dfXOSbH']
       }
   }
   # In the development environment your application's code is reloaded on
