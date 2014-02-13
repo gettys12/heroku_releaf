@@ -4,9 +4,38 @@
   .row-fluid
     .span1
     .span6
-      = image_tag('Drawing1.png', :class=> 'big-logo')
-      %center
-        #subtitle
+      #myCarousel.carousel.slide{"data-ride" => "carousel"}
+        %ol.carousel-indicators
+          %li.active{"data-slide-to" => "0", "data-target" => "#myCarousel"}
+          %li{"data-slide-to" => "1", "data-target" => "#myCarousel"}
+          %li{"data-slide-to" => "2", "data-target" => "#myCarousel"}
+        -if (! @resources.empty?)
+          .carousel-inner
+            .item.active
+              =image_tag(@resources.first.image.url)
+              .container
+                .carousel-caption
+                  %h1
+                    = "Add captions to resources?"
+                  %p
+                    = "Photo Description?? Delete?"
+                  %p
+                    %a.btn.btn-lg.btn-primary{href: "#", role: "button"}
+            - @resources.slice(1,@resources.length) do |f|
+              .item
+                =image_tag(f.image.url)
+                .container
+                  .carousel-caption
+                    %h1
+                      = "photo headling or description?"
+                    %p
+                      = "Photo Description"
+                    %p
+                      %a.btn.btn-lg.btn-primary{href: "#", role: "button"}
+            %a.left.carousel-control{"data-slide" => "prev", href: "#myCarousel"}
+              &laquo
+            %a.right.carousel-control{"data-slide" => "next", href: "#myCarousel"}
+              &raquo
     .span5
       .fleaf-description
         %h3.fleaf-description

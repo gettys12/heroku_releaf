@@ -6,25 +6,25 @@
     = javascript_include_tag 'http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'
     = javascript_include_tag 'bootstrap.min.js'
   %body.landing
-    #testModal.modal.hide.fade-in
-      = form_for session_path(:user) do |f|
-        = f.text_field 'user[email]'
-        = f.text_field 'user[password]'
-        = f.check_box 'user[remember_me]'
-        = f.label 'user[remember_me]', 'Remember me'
-        %button Sign in
-        = link_to "Forgot your password?", new_password_path(:user)
     .navbar.navbar-fixed-top
       .navbar-inner
         .container-fluid
           .nav-collapse.navbar-responsive-collpase.collapse
             %ul.nav.pull-left
               %li
-                =image_tag('brand_slice.gif',:class=>'brand-slice')
+                =link_to image_tag('brand_slice.gif',:class=>'brand-slice'), root_path
+              %li
+                =link_to image_tag('about_slice.gif',:class=>'icon-slice'), about_path
               %li
                 =link_to image_tag('event_slice.gif',:class=>'icon-slice'), :anchor => 'eventSection'
               %li
-                =link_to image_tag('photo_slice.gif',:class=>'icon-slice',:class=>'icon-slice'), :anchor=>'photoSection'
+                =link_to image_tag('photo_slice.gif',:class=>'icon-slice'), :anchor=>'photoSection'
+              %li
+                =link_to image_tag('education_slice.gif', :class=>'icon-slice'), education_path
+              %li
+                =link_to image_tag('distribution_slice.gif',:class=>'icon-slice'), distribution_path
+              %li
+                =link_to image_tag('donate_slice.gif',:class=>'icon-slice'),donations_path
               %li
                 =link_to image_tag('contact.gif',:class=>'icon-slice'), new_message_path
             %ul.nav.pull-right
@@ -33,5 +33,5 @@
               %li
                 =link_to image_tag('signup.gif',:class=>'icon-slice'),new_user_registration_path
               %li
-                =image_tag('login.gif',:class=>'icon-slice', :data=>{:toggle=>'modal',:target=>'#testModal'})
+                =link_to image_tag('login.gif',:class=>'icon-slice'), new_user_session_path
     =yield

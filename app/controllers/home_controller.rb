@@ -4,12 +4,23 @@ class HomeController < ApplicationController
     @libraries = Library.all
     @library_lists = @libraries.in_groups_of(3)
     @library_rest = @library_lists[1,@library_lists.length]
+    @resources = Resource.all
   end
 
   def about
-    respond_to do |format|
-      format.html
-    end
+
+  end
+
+  def education
+
+  end
+
+  def distribution
+
+  end
+
+  def donations
+
   end
 
   def contact
