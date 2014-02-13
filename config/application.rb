@@ -9,15 +9,7 @@ Bundler.require(:default, Rails.env) if defined?(Bundler)
 module Releaf
   class Application < Rails::Application
 
-    config.paperclip_defaults = {
-        :storage => :s3,
-        :url => "https://s3-us-west-1.amazonaws.com/",
-        :s3_credentials => {
-            :bucket => ENV['releaf-files'],
-            :access_key_id => ENV['AKIAJIEDOEQZF4E6UUIQ'],
-            :secret_access_key => ENV['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']
-        }
-    }
+
     #config.assets.initialize_on_precompile = false
 
     config.assets.precompile += ['rails_admin/rails_admin.css', 'rails_admin/rails_admin.js',

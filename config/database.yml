@@ -3,9 +3,7 @@
 #
 #   Ensure the SQLite 3 gem is defined in your Gemfile
 #   gem 'sqlite3'
-AWS_ACCESS_KEY_ID: "whatever_the_key_is"
-AWS_SECRET_ACCESS_KEY: "whatever_the_secret_is"
-AWS_BUCKET: "ndeavor-dev"
+
 development:
   adapter: postgresql
   host: localhost
