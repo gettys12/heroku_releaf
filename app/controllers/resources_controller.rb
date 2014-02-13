@@ -13,16 +13,20 @@ class ResourcesController < ApplicationController
 
 
   def show
-    @resource = Resource.find(params[:id])
+    @resource = Resource.find(resource_params)
 
   end
 
   def create
     @library = Library.find(params[:library_id])
-    @resource = Resource.find(params[:id])
+    @resource = Resource.new(resource_params)
     if @resource.save!
       respond_with(@library)
     end
+  end
+
+  def resource_params
+    params.require(:resource).permit(:image)
   end
 
   def edit

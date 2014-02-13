@@ -1,0 +1,9 @@
+# config/s3.yml
+development:
+  access_key_id: AKIAJIEDOEQZF4E6UUIQ
+  secret_access_key: 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
+  bucket: releaf-files
+production:
+  access_key_id: AKIAJIEDOEQZF4E6UUIQ
+  secret_access_key: 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
+  bucket: releaf-files
