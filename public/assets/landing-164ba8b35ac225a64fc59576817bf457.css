@@ -1,0 +1,106 @@
+/* line 21, C:/Users/kmurphy/Ruby/releaf/app/assets/stylesheets/landing.css.scss */
+html {
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
+
+/* line 26, C:/Users/kmurphy/Ruby/releaf/app/assets/stylesheets/landing.css.scss */
+h1 {
+  color: black;
+}
+
+/* line 30, C:/Users/kmurphy/Ruby/releaf/app/assets/stylesheets/landing.css.scss */
+h2 {
+  color: black;
+}
+
+/* line 37, C:/Users/kmurphy/Ruby/releaf/app/assets/stylesheets/landing.css.scss */
+.brand-slice {
+  width: 150px;
+  height: 70px;
+}
+
+/* line 41, C:/Users/kmurphy/Ruby/releaf/app/assets/stylesheets/landing.css.scss */
+.icon-slice {
+  width: 100px;
+  height: 50px;
+}
+
+/* line 45, C:/Users/kmurphy/Ruby/releaf/app/assets/stylesheets/landing.css.scss */
+.banner-slice {
+  margin-bottom: 15px;
+}
+
+/* line 51, C:/Users/kmurphy/Ruby/releaf/app/assets/stylesheets/landing.css.scss */
+.big-logo {
+  margin-top: 50px;
+}
+
+/* line 54, C:/Users/kmurphy/Ruby/releaf/app/assets/stylesheets/landing.css.scss */
+.fleaf-description {
+  font-size: 115%;
+}
+
+/* line 57, C:/Users/kmurphy/Ruby/releaf/app/assets/stylesheets/landing.css.scss */
+p.fleaf-description, h3.fleaf-description {
+  padding-top: 50px;
+  font-size: larger;
+  line-height: 1.1em;
+}
+
+/* line 65, C:/Users/kmurphy/Ruby/releaf/app/assets/stylesheets/landing.css.scss */
+.lib {
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+/* line 70, C:/Users/kmurphy/Ruby/releaf/app/assets/stylesheets/landing.css.scss */
+.span4 {
+  width: 300px;
+}
+
+/* line 73, C:/Users/kmurphy/Ruby/releaf/app/assets/stylesheets/landing.css.scss */
+.span4.first {
+  margin-left: 70px;
+}
+
+/* line 76, C:/Users/kmurphy/Ruby/releaf/app/assets/stylesheets/landing.css.scss */
+.span.third {
+  margin-right: 70px;
+}
+
+/* line 79, C:/Users/kmurphy/Ruby/releaf/app/assets/stylesheets/landing.css.scss */
+.span4.second, .span4.third {
+  margin-left: 50px;
+}
+
+/* line 83, C:/Users/kmurphy/Ruby/releaf/app/assets/stylesheets/landing.css.scss */
+.img-thumbnail.library {
+  margin-bottom: 10px;
+}
+
+/* line 88, C:/Users/kmurphy/Ruby/releaf/app/assets/stylesheets/landing.css.scss */
+.caption {
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+/* line 93, C:/Users/kmurphy/Ruby/releaf/app/assets/stylesheets/landing.css.scss */
+h3.caption {
+  font-family: helvetica, verdana, arial, sans-serif;
+  color: #6D6E71;
+}
+
+/* line 97, C:/Users/kmurphy/Ruby/releaf/app/assets/stylesheets/landing.css.scss */
+.right-control, .left-control {
+  height: 50px;
+  width: 50px;
+}
+
+/* line 102, C:/Users/kmurphy/Ruby/releaf/app/assets/stylesheets/landing.css.scss */
+.right-control {
+  float: right;
+}
