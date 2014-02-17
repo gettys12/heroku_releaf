@@ -49,7 +49,6 @@ ActiveRecord::Schema.define(version: 20140128003257) do
 
   create_table "libraries", force: true do |t|
     t.string   "name"
-    t.string   "type"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -85,7 +84,6 @@ ActiveRecord::Schema.define(version: 20140128003257) do
   add_index "rails_admin_histories", ["item", "table", "month", "year"], name: "index_rails_admin_histories", using: :btree
 
   create_table "resources", force: true do |t|
-    t.string   "type"
     t.datetime "created_at",         null: false
     t.datetime "updated_at",         null: false
     t.string   "image_file_name"

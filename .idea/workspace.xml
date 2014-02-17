@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aaa51581-cc72-4b88-a79a-c0418cd7530c" name="Default" comment="last attempt&#10;">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/development.rb" afterPath="$PROJECT_DIR$/config/environments/development.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/library.rb" afterPath="$PROJECT_DIR$/app/models/library.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/releaf.iml" afterPath="$PROJECT_DIR$/.idea/releaf.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/resource.rb" afterPath="$PROJECT_DIR$/app/models/resource.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
     </list>
     <ignored path="releaf.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -21,7 +22,7 @@
     <SUITE FILE_PATH="coverage/releaf@db_migrate__releaf.coverage" NAME="db:migrate: releaf Coverage Results" MODIFIED="1391357610546" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="releaf" />
     <SUITE FILE_PATH="coverage/releaf@db_schema_dump__releaf.coverage" NAME="db:schema:dump: releaf Coverage Results" MODIFIED="1390246465279" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="releaf" />
     <SUITE FILE_PATH="coverage/releaf@Development__releaf.coverage" NAME="Development: releaf Coverage Results" MODIFIED="1392643628519" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="releaf" />
-    <SUITE FILE_PATH="coverage/releaf@db_schema_load__releaf.coverage" NAME="db:schema:load: releaf Coverage Results" MODIFIED="1391354924594" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="releaf" />
+    <SUITE FILE_PATH="coverage/releaf@db_schema_load__releaf.coverage" NAME="db:schema:load: releaf Coverage Results" MODIFIED="1392644731744" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="releaf" />
     <SUITE FILE_PATH="coverage/releaf@Rails_console__releaf.coverage" NAME="Rails console: releaf Coverage Results" MODIFIED="1392317506831" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="releaf" />
     <SUITE FILE_PATH="coverage/releaf@rails_admin_uninstall__releaf.coverage" NAME="rails_admin:uninstall: releaf Coverage Results" MODIFIED="1390868885323" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="releaf" />
     <SUITE FILE_PATH="coverage/releaf@db_setup__releaf.coverage" NAME="db:setup: releaf Coverage Results" MODIFIED="1391360380998" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="releaf" />
@@ -85,16 +86,25 @@
       <file leaf-file-name="resource.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/resource.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="46" selection-start="521" selection-end="521" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
+            <state line="2" column="18" selection-start="56" selection-end="56" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="development.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="library.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/models/library.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="18" selection-start="55" selection-end="55" vertical-scroll-proportion="0.071278825" vertical-offset="0" max-vertical-offset="477">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="development.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="119" selection-end="119" vertical-scroll-proportion="0.05870021" vertical-offset="6" max-vertical-offset="680">
+            <state line="2" column="0" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0" vertical-offset="6" max-vertical-offset="680">
               <folding />
             </state>
           </provider>
@@ -103,7 +113,7 @@
       <file leaf-file-name="production.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="34" selection-end="34" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="1496">
+            <state line="2" column="0" selection-start="34" selection-end="34" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1496">
               <folding />
             </state>
           </provider>
@@ -132,7 +142,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/users/registrations/new.html.erb" />
         <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
         <option value="$PROJECT_DIR$/app/views/rails_admin/_part.html.haml" />
         <option value="$PROJECT_DIR$/config/initializers/rails_admin.rb" />
@@ -141,7 +150,6 @@
         <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20140127200440_add_devise_to_admins.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20140128003256_add_devise_to_admins.rb" />
-        <option value="$PROJECT_DIR$/db/schema.rb" />
         <option value="$PROJECT_DIR$/app/models/admin.rb" />
         <option value="$PROJECT_DIR$/app/controllers/admins_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/libraries/_index.html.haml" />
@@ -180,9 +188,11 @@
         <option value="$PROJECT_DIR$/app/assets/stylesheets/landing.css.scss" />
         <option value="$PROJECT_DIR$/app/views/home/about.html.haml" />
         <option value="$PROJECT_DIR$/config/s3.yml" />
-        <option value="$PROJECT_DIR$/app/models/resource.rb" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/config/environments/development.rb" />
+        <option value="$PROJECT_DIR$/app/models/resource.rb" />
+        <option value="$PROJECT_DIR$/app/models/library.rb" />
+        <option value="$PROJECT_DIR$/db/schema.rb" />
       </list>
     </option>
   </component>
@@ -568,31 +578,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Rails.Development: releaf">
-    <configuration default="false" name="assets:environment: releaf" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
-      <module name="releaf" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="RAILS_ENV" value="production" />
-      </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
-      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="assets:environment" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE="" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="true" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
-      <RunnerSettings RunnerId="RubyRunner" />
-      <ConfigurationWrapper RunnerId="RubyRunner" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Rake.db:schema:load: releaf">
     <configuration default="false" name="assets:precompile: releaf" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
       <module name="releaf" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -678,6 +664,30 @@
       <IRB_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/bin/rails" />
       <IRB_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="console" />
       <IRB_RUN_CONFIG NAME="IS_RAILS_CONSOLE" VALUE="true" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="db:schema:load: releaf" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
+      <module name="releaf" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="RAILS_ENV" value="development" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="db:schema:load" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
       <RunnerSettings RunnerId="RubyRunner" />
       <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
@@ -822,19 +832,19 @@
       <item index="2" class="java.lang.String" itemvalue="Rails.Unnamed" />
       <item index="3" class="java.lang.String" itemvalue="Rake.test: releaf" />
       <item index="4" class="java.lang.String" itemvalue="Rake.spec: releaf" />
-      <item index="5" class="java.lang.String" itemvalue="Rake.assets:environment: releaf" />
-      <item index="6" class="java.lang.String" itemvalue="Rake.assets:precompile: releaf" />
-      <item index="7" class="java.lang.String" itemvalue="Rake.doc:app: releaf" />
-      <item index="8" class="java.lang.String" itemvalue="Rake.routes: releaf" />
-      <item index="9" class="java.lang.String" itemvalue="IRB console.Rails console: releaf" />
+      <item index="5" class="java.lang.String" itemvalue="Rake.assets:precompile: releaf" />
+      <item index="6" class="java.lang.String" itemvalue="Rake.doc:app: releaf" />
+      <item index="7" class="java.lang.String" itemvalue="Rake.routes: releaf" />
+      <item index="8" class="java.lang.String" itemvalue="IRB console.Rails console: releaf" />
+      <item index="9" class="java.lang.String" itemvalue="Rake.db:schema:load: releaf" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="IRB console.Rails console: releaf" />
-        <item index="1" class="java.lang.String" itemvalue="Rake.routes: releaf" />
-        <item index="2" class="java.lang.String" itemvalue="Rake.doc:app: releaf" />
-        <item index="3" class="java.lang.String" itemvalue="Rake.assets:precompile: releaf" />
-        <item index="4" class="java.lang.String" itemvalue="Rake.assets:environment: releaf" />
+        <item index="0" class="java.lang.String" itemvalue="Rake.db:schema:load: releaf" />
+        <item index="1" class="java.lang.String" itemvalue="IRB console.Rails console: releaf" />
+        <item index="2" class="java.lang.String" itemvalue="Rake.routes: releaf" />
+        <item index="3" class="java.lang.String" itemvalue="Rake.doc:app: releaf" />
+        <item index="4" class="java.lang.String" itemvalue="Rake.assets:precompile: releaf" />
       </list>
     </recent_temporary>
   </component>
@@ -936,11 +946,6 @@
     <entry file="file://$PROJECT_DIR$/app/models/event.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/library.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="456" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/user.rb">
@@ -1098,13 +1103,6 @@
         <state line="14" column="25" selection-start="509" selection-end="509" vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="731" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/schema.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="34" selection-start="3345" selection-end="3363" vertical-scroll-proportion="0.23376623" vertical-offset="1385" max-vertical-offset="2363">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/resources_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="0" selection-start="267" selection-end="267" vertical-scroll-proportion="0.27991885" vertical-offset="83" max-vertical-offset="799" />
@@ -1179,9 +1177,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/resource.rb">
+    <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="46" selection-start="521" selection-end="521" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
+        <state line="2" column="0" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0" vertical-offset="6" max-vertical-offset="680">
           <folding />
         </state>
       </provider>
@@ -1193,9 +1191,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/resource.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="119" selection-end="119" vertical-scroll-proportion="0.05870021" vertical-offset="6" max-vertical-offset="680">
+        <state line="2" column="18" selection-start="56" selection-end="56" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/schema.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="0" selection-start="2159" selection-end="2159" vertical-scroll-proportion="0.5178197" vertical-offset="620" max-vertical-offset="2329">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/library.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="18" selection-start="55" selection-end="55" vertical-scroll-proportion="0.071278825" vertical-offset="0" max-vertical-offset="477">
           <folding />
         </state>
       </provider>
