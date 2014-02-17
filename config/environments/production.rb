@@ -1,13 +1,6 @@
 Releaf::Application.configure do
 
-  config.paperclip_defaults = {
-      :storage => :s3,
-      :s3_credentials => {
-          :bucket => 'releaf-files',
-          :access_key_id => 'AKIAJIEDOEQZF4E6UUIQ',
-          :secret_access_key => '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'
-      }
-  }
+
   # Settings specified here will take precedence over those in config/application.rb.
   config.serve_static_assets = true
 
