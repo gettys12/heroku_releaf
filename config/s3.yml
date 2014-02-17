@@ -1,9 +1,0 @@
-# config/s3.yml
-development:
-  access_key_id:
-  secret_access_key:
-  bucket: releaf-files
-production:
-  access_key_id:
-  secret_access_key:
-  bucket: releaf-files
