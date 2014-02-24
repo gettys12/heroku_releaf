@@ -36,16 +36,6 @@ $(document).ready(function(){
         trigger: "hover"
     });*/
 
-    $('form#sign_in').bind('ajax:success', function(e, data, status, xhr) {
-        console.log(data);
-        if(data.success) {
-            $('#user-login-box').html(data.content);
-        } else {
-            $('#user-login-box').prepend(data.errors.join('<br />'));
-        }
-    });
-
-
     init_calendar();
     //first find the fullCalendar Event
 

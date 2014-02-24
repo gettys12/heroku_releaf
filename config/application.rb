@@ -10,11 +10,11 @@ module Releaf
   class Application < Rails::Application
 
 
-    #config.assets.initialize_on_precompile = false
+    config.assets.initialize_on_precompile = false
 
-    config.assets.precompile += ['rails_admin/rails_admin.css', 'rails_admin/rails_admin.js',
-                                 'bootstrap.css','application.css','test.css', 'landing.css','index.js','fullcalendar.js','newmy-calendar.css',
-                                 'social-buttons.css','_event.css.scss','_header.css.scss','_table.css.scss','bootstrap.min.js',]
+    #config.assets.precompile += ['rails_admin/rails_admin.css', 'rails_admin/rails_admin.js',
+    #                             'bootstrap.css','application.css','test.css', 'landing.css','index.js','fullcalendar.js','newmy-calendar.css',
+    #                             'social-buttons.css','_event.css.scss','_header.css.scss','_table.css.scss','bootstrap.min.js',]
 
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
@@ -26,5 +26,6 @@ module Releaf
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
+    config.assets.initialize_on_precompile = false
   end
 end

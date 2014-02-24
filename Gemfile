@@ -12,9 +12,13 @@ gem 'devise', '~> 3.2.2'
 gem 'rails_admin'
 
 gem 'sass-rails', '~> 4.0.0'
-gem  'pg'
 gem 'rails_12factor', :group=> "production"
-
+group :production do
+  gem 'pg'
+end
+group :development, :test do
+  gem 'sqlite3'
+end
 gem "twitter-bootstrap-rails"
 
 #isolate assets for heroku deployment
@@ -25,7 +29,6 @@ gem 'jquery-rails'
 gem 'uglifier', '>= 1.3.0'
 gem 'compass-rails'
 gem 'paperclip'
-gem 'aws-sdk'
 gem 'jquery-ui-rails'
 # Use Uglifier as compressor for JavaScript assets
 gem 'google-api-client', :require => 'google/api_client'

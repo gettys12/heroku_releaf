@@ -20,9 +20,7 @@ class ResourcesController < ApplicationController
   def create
     @library = Library.find(params[:library_id])
     @resource = Resource.find(params[:id])
-    if @resource.save!
-      respond_with(@library)
-    end
+
   end
 
   def edit
