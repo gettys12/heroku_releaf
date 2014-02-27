@@ -6,32 +6,39 @@
     = javascript_include_tag 'http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'
     = javascript_include_tag 'bootstrap.min.js'
   %body.landing
-    .navbar.navbar-fixed-top
+    .navbar.navbar-fixed-top.navbar-default
       .navbar-inner
         .container-fluid
           .nav-collapse.navbar-responsive-collpase.collapse
             %ul.nav.pull-left
               %li
                 =link_to image_tag('old_logo_03.gif',:class=>'brand-slice'), root_path
+              %li.dropdown
+                %a{:href=>'#',:class=>'dropdown-toggle',:'data-toggle'=>'dropdown'}
+                  =image_tag('about-slice3.gif')
+                %ul.dropdown-menu
+                  %li
+                    =link_to image_tag('board.gif', :class=>'icon-slice'), board_path
+                  %li
+                    =link_to image_tag('education_slice.gif', :class=>'icon-slice'), education_path
+                  %li
+                    =link_to image_tag('distribution_slice.gif',:class=>'icon-slice-distribute'), distribution_path
+                  %li
+                    =link_to image_tag('donate_slice.gif',:class=>'icon-slice'),donations_path
               %li
-                =link_to image_tag('about_slice.gif',:class=>'icon-slice'), about_path
+                =link_to image_tag('event_slice.gif',:class=>'icon-slice'), :controller=>'events',:action=>'search'
               %li
-                =link_to image_tag('event_slice.gif',:class=>'icon-slice'), :anchor => 'eventSection'
+                =link_to image_tag('photo_slice.gif',:class=>'icon-slice'), libraries_path
               %li
-                =link_to image_tag('photo_slice.gif',:class=>'icon-slice'), :anchor=>'photoSection'
+                =link_to image_tag('contact.gif',:class=>'icon-slice'), :controller=>'home',:action=>'contact'
               %li
-                =link_to image_tag('education_slice.gif', :class=>'icon-slice'), education_path
-              %li
-                =link_to image_tag('distribution_slice.gif',:class=>'icon-slice'), distribution_path
-              %li
-                =link_to image_tag('donate_slice.gif',:class=>'icon-slice'),donations_path
-              %li
-                =link_to image_tag('contact.gif',:class=>'icon-slice'), new_message_path
+                =link_to image_tag('resource-slice.gif'),:anchor => 'resource-list'
+
             %ul.nav.pull-right
-              %li
-                =link_to "logout",:controller=>'devise/sessions',:action=>'destroy'
               %li
                 =link_to image_tag('signup.gif',:class=>'icon-slice'),new_user_registration_path
               %li
-                =link_to image_tag('login.gif',:class=>'icon-slice'), new_user_session_path
+                =link_to image_tag('login.gif',:class=>'icon-slice'),new_user_session_path
+              %li
+                =link_to "logout",:controller=>'devise/sessions',:action=>'destroy'
     =yield

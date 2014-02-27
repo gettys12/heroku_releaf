@@ -38,13 +38,10 @@ ActiveRecord::Schema.define(version: 20140128003257) do
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
     t.string   "name"
-    t.float    "latitude"
-    t.float    "longitude"
+    t.string   "location"
     t.string   "description"
-    t.datetime "time_start"
-    t.datetime "time_end"
-    t.datetime "date_start"
-    t.datetime "date_end"
+    t.datetime "start_time"
+    t.datetime "end_time"
   end
 
   create_table "libraries", force: true do |t|
@@ -62,13 +59,7 @@ ActiveRecord::Schema.define(version: 20140128003257) do
     t.integer  "priority"
   end
 
-  create_table "photos", force: true do |t|
-    t.integer  "resource_id"
-    t.string   "name"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-    t.string   "image"
-  end
+
 
   create_table "rails_admin_histories", force: true do |t|
     t.text     "message"
@@ -83,7 +74,7 @@ ActiveRecord::Schema.define(version: 20140128003257) do
 
   add_index "rails_admin_histories", ["item", "table", "month", "year"], name: "index_rails_admin_histories", using: :btree
 
-  create_table "resources", force: true do |t|
+  create_table "photos", force: true do |t|
     t.datetime "created_at",         null: false
     t.datetime "updated_at",         null: false
     t.string   "image_file_name"

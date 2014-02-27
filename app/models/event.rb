@@ -1,9 +1,8 @@
 class Event < ActiveRecord::Base
 
-  attr_accessible  :name, :location, :description,:time_start, :time_end, :date_end, :date_start
-
-  scope :before, lambda {|end_time| {:conditions => ["date_end < ?", Event.format_date(end_time)] }}
-  scope :after, lambda {|start_time| {:conditions => ["date_start > ?", Event.format_date(start_time)] }}
+  attr_accessible  :name, :location, :description,:end_time, :start_time
+  scope :before, lambda {|end_time| {:conditions => ["end_time < ?",Event.format_date(end_time)] }}
+  scope :after, lambda {|start_time| {:conditions => ["start_time > ?", Event.format_date(start_time)] }}
 
 
   def as_json(options = {})
@@ -11,8 +10,8 @@ class Event < ActiveRecord::Base
         :id => self.id,
         :title => self.name,
         :description => self.description || "",
-        :start => self.date_start,
-        :end => self.date_start,
+        :start => self.start_time,
+        :end => self.end_time,
         :allDay => false,
         :recurring => false,
         :url => Rails.application.routes.url_helpers.event_path(id)
@@ -21,6 +20,14 @@ class Event < ActiveRecord::Base
 
   def self.format_date(date_time)
     Time.at(date_time.to_i).to_formatted_s(:db)
+  end
+
+  def self.search(search)
+    if search
+      find(:all, :conditions => ['name LIKE ?', "%#{search}%"])
+    else
+      find(:all)
+    end
   end
 
 end

@@ -3,28 +3,21 @@ class LibrariesController < ApplicationController
   def index
     @libraries = Library.all
     @library = Library.new
-    @resource = @library.resources.build
+    @photo = @library.photos.build
   end
   
   def new
-    @library =  Library.new(:name=> params[:name])
-    @resource = @library.resources.build
+    @library =  Library.new
   end
   
   
   def show
     @library = Library.find(params[:id])
-    @last = @library.resources.last
-    respond_to do |format|
-      format.js
-      format.html {render @library}
-    end
-
+    @last = @library.photos.last
   end
   
   def create
-    @library = Library.create(params[:library])
-    redirect_to :controller=>:libraries, :action=>:index
+    @library = Library.new(params[:library])
   end
   
   def edit
@@ -47,6 +40,12 @@ class LibrariesController < ApplicationController
   def require_existing_photo
     @library = Library.find(params[:library_id])
     
+  end
+
+  private
+
+  def library_params
+    params.require(:library).permit(:name, :photos_attributes=> [:id,:image,:library_id])
   end
   
 end

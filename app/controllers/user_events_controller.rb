@@ -18,7 +18,7 @@ class UserEventsController < ApplicationController
     @event = @user.events.build
     respond_with(@event)
     respond_to do |format|
-      format.html # _new.html.erb
+      format.html # sign_in.html.erb
       format.xml  { render :xml => @event }
     end
   end

@@ -1,15 +1,10 @@
-.container{:style=>"width:820px; margin:0 auto;"}
-  .content
-    .hero-unit
-      %h4 Please fill the form below:
-      %p
-        = form_for @message do |f|
-          =f.label :name
-          =f.text_field :name
-          %br
-          =f.label :email
-          =f.text_field :email
-          %br
-          =f.label :content
-          =f.text_field :content
-          =f.submit
+%h1
+  ="Contact Us"
+= form_for @message do |f|
+  =f.label :name
+  = f.text_field :name
+  = f.label :email
+  = f.text_field :email
+  = f.label :content, "Message"
+  = f.text_area :content, :rows => 5
+  = f.submit "Send Message"

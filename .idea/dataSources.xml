@@ -17,6 +17,12 @@
       <user-password>dfc5dfc7dfcddfc5dfc7dfcddf9bdf9b</user-password>
       <libraries />
     </data-source>
+    <data-source source="LOCAL" name="Rails releaf: development" uuid="2b2cb7b4-e37a-4c4c-9fb6-e9dae0fd7739">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\Users\kmurphy\Ruby\releaf\db\development.sqlite3</jdbc-url>
+      <libraries />
+    </data-source>
   </component>
 </project>
 

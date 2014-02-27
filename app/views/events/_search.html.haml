@@ -1,0 +1,14 @@
+=form_tag events_path , :method => 'get', :class=>'form-group' do
+  =text_field_tag :search, params[:search], :class=>'form-control',:placeholder=> "Search for an event"
+  =submit_tag "Search", :class=>'btn btn-default'
+
+#event-list.panel.panel-default
+  #event-heading.panel-heading
+    ="Click on an event to sign up!"
+  #event-body.panel-body
+    ="Event panel body...."
+  %ul.list-group
+    -@events.each do |e|
+      %li.list-group-item
+        =e.name
+

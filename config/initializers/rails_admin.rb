@@ -155,7 +155,7 @@ RailsAdmin.config do |config|
 
   #   # Found associations:
 
-  #     configure :resources, :has_many_association 
+  #     configure :photos, :has_many_association
 
   #   # Found columns:
 
@@ -241,7 +241,7 @@ RailsAdmin.config do |config|
 
   # config.model 'Resource' do
 
-  #   # You can copy this to a 'rails_admin do ... end' block inside your resource.rb model definition
+  #   # You can copy this to a 'rails_admin do ... end' block inside your photo.rb model definition
 
   #   # Found associations:
 

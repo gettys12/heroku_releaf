@@ -1,0 +1,18 @@
+.container-fluid
+  .row-fluid
+    .span10
+      %h4.evnt
+        ="Location: #{@event.location}"
+    .span2
+  .row-fluid
+    .span10
+      %h4.evnt
+        ="When: #{@event.start_time}"
+    .span2
+  .row-fluid
+    .span10
+      %p.fleaf-description
+        =@event.description
+    .span2
+
+

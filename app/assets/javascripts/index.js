@@ -24,7 +24,13 @@ function init_calendar(){
             color: 'white',
             textColor: 'black',
             ignoreTimezone: false
-        }]
+        }],
+        eventClick: function(calEvent, jsEvent, view) {
+            $('.modal-heading').html(calEvent.title);
+            $('.modal-body').html($.get('/events/'+calEvent.id));
+            $('.modal').modal();
+            return false;
+        }
     });
 
 }
@@ -36,16 +42,16 @@ $(document).ready(function(){
         trigger: "hover"
     });*/
 
+
+
     init_calendar();
     //first find the fullCalendar Event
 
     //init_map();
-/*
+
     if($('.carousel').length){
-        $(".carousel").carousel({
-           interval : 2000
-        });
-    }*/
+        $(".carousel").carousel();
+    }
 
 
 

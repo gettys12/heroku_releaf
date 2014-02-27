@@ -4,7 +4,8 @@ class HomeController < ApplicationController
     @libraries = Library.all
     @library_lists = @libraries.in_groups_of(3)
     @library_rest = @library_lists[1,@library_lists.length]
-    @resources = Resource.all
+    @photos = Photo.all
+    @events = Event.all
   end
 
   def about
@@ -19,20 +20,24 @@ class HomeController < ApplicationController
 
   end
 
+  def board
+
+  end
   def donations
 
   end
 
   def contact
     @title = "Contact us"
+    @message = Message.new
   end
 
   def gallery
     @libraries = Library.all
-    @display_resources = []
+    @display_photos = []
     @libraries.each do |l|
-      @display_resources.push(l.resources.first)
+      @display_photos.push(l.photos.first)
     end
-    @display_resources
+    @display_photos
   end
 end

@@ -3,9 +3,13 @@ class EventsController < ApplicationController
 
 
   def index
+    if !(params[:search]).nil?
+      @events = Event.search(params[:search])
+    else
     @events = Event.scoped
     @events = @events.after(params['start']) if (params['start'])
     @events = @events.before(params['end']) if (params['end'])
+    end
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @events }
@@ -19,7 +23,7 @@ class EventsController < ApplicationController
     @event = @user.events.build
     respond_with(@event)
     respond_to do |format|
-      format.html # _new.html.erb
+      format.html # sign_in.html.erb
       format.xml  { render :xml => @event }
     end
   end
@@ -33,7 +37,10 @@ class EventsController < ApplicationController
 
   def show
     @event = Event.find(params[:id])
-
+    respond_to do |format|
+      format.js
+      format.json { render json: @event }
+    end
   end
 
   def edit

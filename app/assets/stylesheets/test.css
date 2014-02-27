@@ -5249,6 +5249,7 @@ a.label:hover, a.badge:hover {
 .carousel {
     position: relative;
     margin-bottom: 20px;
+    carousel:500px;
     line-height: 1
 }
 
@@ -5269,7 +5270,9 @@ a.label:hover, a.badge:hover {
 
 .carousel-inner > .item > img {
     display: block;
-    line-height: 1
+    line-height: 1;
+    height:500px;
+    width:100%;
 }
 
 .carousel-inner > .active, .carousel-inner > .next, .carousel-inner > .prev {
@@ -5349,7 +5352,7 @@ a.label:hover, a.badge:hover {
     background: rgba(0, 0, 0, 0.75)
 }
 
-.carousel-caption h4, .carousel-caption p {
+.carousel-caption h1, .carousel-caption p {
     color: #fff;
     line-height: 20px
 }
@@ -5360,6 +5363,9 @@ a.label:hover, a.badge:hover {
 
 .carousel-caption p {
     margin-bottom: 0
+}
+.carousel-indicators{
+    display:none;
 }
 
 .hero-unit {

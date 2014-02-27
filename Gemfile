@@ -28,7 +28,7 @@ gem 'jquery-rails'
 
 gem 'uglifier', '>= 1.3.0'
 gem 'compass-rails'
-gem 'paperclip'
+gem "paperclip", "~> 3.5.3"
 gem 'jquery-ui-rails'
 # Use Uglifier as compressor for JavaScript assets
 gem 'google-api-client', :require => 'google/api_client'
