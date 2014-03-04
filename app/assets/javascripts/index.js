@@ -21,7 +21,7 @@ function init_calendar(){
         },
         eventSources: [{
             url: '/events',
-            color: 'white',
+            color: 'cornflowerblue',
             textColor: 'black',
             ignoreTimezone: false
         }],

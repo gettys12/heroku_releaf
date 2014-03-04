@@ -1,14 +1,19 @@
-.container
-  .row
-  .row
-    %span7
-      %h2
-        ="Donation Form"
+.container-fluid
+  .row-fluid
+    .span1
+    .span5
+      %h3
+        ="Why Donate?"
       %p
+        ="Include description about donations: "
       %p
-    %span1
-    %span4
-      %h2
+        ='Where do they go? How much does the organization rely on donations?'
+      %p
+        ='Donate button may be configured to a PayPal merchant account or other donation services.'
+      %a{:data=>{:href=>'https://www.paypal.com'}}
+        =image_tag('donate-button_03.gif')
+    .span5
+      %h3
         ="Community Volunteer Partnerships"
       %p.about-para
         ='Fairfax ReLeaf offers a variety of opportunities for your group to volunteer and/or donate resources to our programs! We coordinate volunteer workdays for corporate and community groups. These workdays are an opportunity for groups to engage in a team-building activity while planting tree seedlings in Fairfax County.'
@@ -18,3 +23,4 @@
         ='We also partner with groups that may not have the time to volunteer, but are willing to donate resources to our volunteer events. Examples of resource donations include, but are not limited to: volunteer refreshments, tools, supplies, or a monetary donation on behalf of your group.'
       %p.about-para
         ='Please contact Taylor Beach at trees@fairfaxreleaf.org or by phone at 703-324-1409 for more information on scheduling your event.'
+    .span1

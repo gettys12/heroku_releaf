@@ -10,6 +10,7 @@
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'))
 .container-fluid
+  %br
   %h1
   .row-fluid
     .span1
@@ -47,7 +48,7 @@
         %h3.fleaf-description
           ="Welcome!"
         .fb-like{:data=>{:href=>'https://www.facebook.com/pages/Fairfax-ReLeaf/292969257415322',:width=>'240',:height=>'43',:layout=>'button',:action=>'like', :'show-faces'=>"false",:share=>"false"}}
-        =image_tag('donate-button_03.gif')
+        =link_to image_tag('donate-button_03.gif'),:controller => 'home',:action => 'donations'
         %p.fleaf-description
           ="In the last two decades, over thirty-five percent of Northern Virginia's urban forest has been bulldozed and chainsawed, according to aerial photos from the Forest Service. Our aim is to conserve, restore and promote sustainable urban forests in Northern Virginia by restoring large numbers of native trees on public commons land where funding for landscaping is lacking and nothing would otherwise be planted, and to educate government and the public about the values and benefits of the urban forest."
         %p.fleaf-description
@@ -75,10 +76,15 @@
       =render :partial => 'events/calendar', :locals => {}
     .span4
       =render :partial => 'events/search', :locals => {}
-
-.container
+.container.fixed-bottom
   %h1.mission-heading
-    ="Our Mission in Four Goals:"
+    ="Our Mission"
+  .row-fluid
+    .span3
+    .span6
+      %p.fleaf-description.gray
+        ="It is the mission of Fairfax ReLeaf to conserve, restore and promote sustainable urban forests in Northern Virginia. The supporting goals for this mission statement include the following four goals:"
+    .span3
   .row.goals
     .span3
       =image_tag('mission1.gif',:class=>'mission-slice')
@@ -88,15 +94,3 @@
       =image_tag('mission3.gif',:class=>'mission-slice')
     .span3
       =image_tag('mission4.gif',:class=>'mission-slice')
-.container{:id=>'resource-list'}
-  .row
-    .span2
-    .span2
-      ="Book Reviews"
-    .span2
-      ="FAQ"
-    .span2
-      ="Friends"
-    .span2
-      ="Urban Forest Resources"
-    .span3

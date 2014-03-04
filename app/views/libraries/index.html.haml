@@ -1,34 +1,38 @@
-.row.lib
-  #myCarousel.carousel.text-border.slide.clearfix.loadedSlider
-    .carousel-inner
-      .item.active
-        .span4.first
-          =image_tag(@library_lists.first.first.photos.last.image.url,:class=>"img-thumbnail library")
-          %h3.caption
-            ="Rawley Loken Planting"
-        .span4.second
-          =image_tag(@library_lists.first.second.photos.last.image.url, :class=>"img-thumbnail library")
-          %h3.caption
-            ="South Run Planting"
-        .span4.third
-          =image_tag(@library_lists.first.last.photos.last.image.url,:class=>"img-thumbnail library")
-          %h3.caption
-            ="2007 Photos"
-      -@library_rest.each do |nxt_lib_lst|
-        .item
+.container
+.container
+  %h1.gray
+    ="Browse our Photo Galleries!"
+  .row.lib
+    #myCarousel.carousel.text-border.slide.clearfix.loadedSlider
+      .carousel-inner
+        .item.active
           .span4.first
-            =image_tag(nxt_lib_lst.first.photos.last.image.url,:class=>"img-thumbnail library")
+            =image_tag(@library_lists.first.first.photos.last.image.url,:class=>"img-thumbnail library")
             %h3.caption
-              ="Library Name"
+              ="Rawley Loken Planting"
           .span4.second
-            =image_tag(nxt_lib_lst.second.photos.last.image.url,:class=>"img-thumbnail library")
+            =image_tag(@library_lists.first.second.photos.last.image.url, :class=>"img-thumbnail library")
             %h3.caption
-              ="Library Name"
-          -if nxt_lib_lst.last != nil
-            .span4.third
-              =image_tag(nxt_lib_lst.last.photos.last.image.url,:class=>"img-thumbnail library")
+              ="South Run Planting"
+          .span4.third
+            =image_tag(@library_lists.first.last.photos.last.image.url,:class=>"img-thumbnail library")
+            %h3.caption
+              ="2007 Photos"
+        -@library_rest.each do |nxt_lib_lst|
+          .item
+            .span4.first
+              =image_tag(nxt_lib_lst.first.photos.last.image.url,:class=>"img-thumbnail library")
               %h3.caption
                 ="Library Name"
-.row
-  =image_tag('control-left.gif',"data-slide"=>"prev",:href=> '#myCarousel',:class=>'span6 left-control')
-  =image_tag('control-right.gif',"data-slide"=>"prev",:href=> '#myCarousel',:class=>'span6 right-control')
+            .span4.second
+              =image_tag(nxt_lib_lst.second.photos.last.image.url,:class=>"img-thumbnail library")
+              %h3.caption
+                ="Library Name"
+            -if nxt_lib_lst.last != nil
+              .span4.third
+                =image_tag(nxt_lib_lst.last.photos.last.image.url,:class=>"img-thumbnail library")
+                %h3.caption
+                  ="Library Name"
+  .row
+    =image_tag('control-left.gif',"data-slide"=>"prev",:href=> '#myCarousel',:class=>'span6 left-control')
+    =image_tag('control-right.gif',"data-slide"=>"prev",:href=> '#myCarousel',:class=>'span6 right-control')
